@@ -20,7 +20,10 @@ public class CustomArrayList<T> implements CustomList<T> {
 		for(int x = 0; x < this.items.length; x++) {
 			newTempArray[x] = this.items[x];
 		}
+		//add new item to array
+		newTempArray[this.items.length] = item;
 		
+		//set temp array equal to class array
 		this.items = newTempArray;
 
 		return true;
